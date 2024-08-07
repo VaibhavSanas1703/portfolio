@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SolutionM4 - Website using HTML CSS</title>
+   <!-- 
+   GOOGLE FONTS CDN
+   -->
+   <link href="https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+   <!-- 
+   ANIMATION CDN FROM ANIMATE.CSS THEY HELP ME ANIMATE ANYTHING 
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- 
+   IMPORT ICONS FROM IONICONS WEBSITE 
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+   <!-- 
+   CUSTOM CSS FILE
+     -->
+   <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+   <div class="scroll-progress"></div>
+  <nav class="navbar flex">
+   <div class="logo">
+      <a href="#">SolutionM4</a>
+   </div>
+
+   <div class="navlinks">
+      <ul class="flex">
+         <li><a href="#hero" class="hover">Home</a></li>
+         <li><a href="#cards" class="hover">Features <ion-icon name="chevron-down-outline"></ion-icon></a></li>
+         <li><a href="#" class="hover">Company</a></li>
+         <li><a href="#" class="hover">Pricing</a></li>
+         <li><a href="#" class="hover">About</a></li>
+         <div class="social-icons">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-skype"></ion-icon>
+            <ion-icon name="logo-vimeo"></ion-icon>
+         </div>
+      </ul>
+   </div>
+
+   <div class="buy-now-btn">
+      <a href="#"><ion-icon name="rocket-outline"></ion-icon> BUY NOW</a>
+   </div>
+
+   <div class="menu">
+         <ion-icon name="menu-outline"></ion-icon>
+   </div>
+  </nav>
+
+  <section id="hero" class="flex">
+   <div class="home-left">
+      <h1 class="animate__animated animate__slideInDown animate__slow">WEB<br>SOLUTION<br>COMPANY</h1>
+      <p class="animate__animated animate__slideInLeft animate__slow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vitae earum, eos illo harum impedit.</p>
+      <a href="#" class="animate__animated animate__slideInUp animate__slow"><ion-icon name="paper-plane-outline"></ion-icon> GET STARTED</a>
+   </div>
+
+   <div class="home-right">
+      <img src="assets/images/Hero.jpg" alt="user">
+   </div>
+  </section>
+
+  <section id="cards" class="flex">
+      <div class="main-cards flex">
+         <h2>Digital Marketing</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quasi.</p>
+         <img src="assets/images/Digital Marketing.jpg" alt="">
+      </div>
+      <div class="main-cards flex">
+         <h2>Ideas and Plans</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio?</p>
+         <img src="assets/images/Ideas and plans.jpg" alt="">
+      </div>
+      <div class="main-cards flex">
+         <h2>Prompt Strategies</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorem.</p>
+         <img src="assets/images/Prompt.jpg" alt="">
+      </div>
+  </section>
+
+  <!-- 
+  CUSTOM JS FILE
+    -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
