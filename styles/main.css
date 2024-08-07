@@ -135,7 +135,7 @@ ion-icon{
 /* ===SCROLL PROGRESS ANIMATION */
 .scroll-progress{
    position: fixed;
-   top: 68px;
+   top: 0;
    width: 0px;
    height: 3px;
    background-color: var(--primary-color);
@@ -146,6 +146,7 @@ ion-icon{
    -moz-border-radius: 50px;
    -ms-border-radius: 50px;
    -o-border-radius: 50px;
+   z-index: 2;
 }
 
 @keyframes scroll-p {
