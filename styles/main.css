@@ -242,14 +242,6 @@ ion-icon{
    overflow: hidden;
 }
 
-.main-cards:hover{
-   transform: translateY(-10px);
-   -webkit-transform: translateY(-10px);
-   -moz-transform: translateY(-10px);
-   -ms-transform: translateY(-10px);
-   -o-transform: translateY(-10px);
-}
-
 .main-cards img{
    width: 100%;
    aspect-ratio: 3/2;
@@ -267,13 +259,84 @@ ion-icon{
    -o-transition: .5s;
 }
 
-.main-cards:hover img{
-   transform: scale(0.98);
-   -webkit-transform: scale(0.98);
-   -moz-transform: scale(0.98);
-   -ms-transform: scale(0.98);
-   -o-transform: scale(0.98);
+
+/* ===SKILLS SECTION=== */
+
+#skills{
+   width: 100%;
+   height: 80vh;
+   padding: 0 80px;
+   margin-top: 100px;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
 }
+
+.skills-heading{
+   text-align: center;
+}
+
+.skills-heading h1{
+   color: var(--white);
+   margin-bottom: 20px;
+}
+
+.main-progress-container{
+   width: 100%;
+   margin-top: 50px;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   gap: 60px;
+}
+
+.progress{
+   width: 180px;
+   height: 180px;
+   border: 15px solid var(--black-light);
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.progress span{
+   font-size: 25px;
+   color: white;
+}
+
+label{
+   color: white;
+   color: var(--primary-color);
+}
+
+.progress-bar1{
+   border-color: var(--primary-color);
+}
+
+.progress-bar2{
+   border-right: 15px solid var(--primary-color);
+   border-bottom: 15px solid var(--primary-color);
+   border-top: 15px solid var(--primary-color);
+}
+
+.progress-bar3{
+   border-top: 15px solid var(--primary-color);
+  border-right: 15px solid var(--primary-color);
+}
+
+.progress-bar4{
+   border-top:15px solid var(--primary-color);
+   border-right: 15px solid var(--primary-color);
+}
+
+
+
 
 @media screen and (max-width:1078px){
   .navbar{
@@ -285,6 +348,10 @@ ion-icon{
   }
 
   #cards{
+   padding: 0 15px;
+  }
+
+  #skills{
    padding: 0 15px;
   }
 }
@@ -379,5 +446,11 @@ ion-icon{
 @media screen and (max-width:380px){
    .home-right img{
       width: 100%;
+   }
+}
+
+@media screen and (max-width:1120px){
+   #cards{
+      height: auto;
    }
 }
